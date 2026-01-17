@@ -1,0 +1,84 @@
+:root {
+  --primary: #00d2ff;
+  --bg: #0b1220;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: Inter, system-ui;
+  color: white;
+}
+
+#app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.glass-container {
+  width: 90%;
+  max-width: 700px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+h1 {
+  margin: 0;
+  color: var(--primary);
+}
+
+#solver-console {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.user {
+  color: #ddd;
+}
+
+.engine {
+  color: var(--primary);
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+input {
+  flex: 1;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  padding: 14px;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  background: var(--primary);
+  border: none;
+  padding: 0 26px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
