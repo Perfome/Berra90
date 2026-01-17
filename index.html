@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Berra Math Engine</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/nerdamer@1.1.13/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+  <div class="glass-container">
+    <header>
+      <h1>Berra Symbolic Math Engine</h1>
+      <p>Deterministic • Low Error • High Performance</p>
+    </header>
+
+    <div id="solver-console"></div>
+
+    <div class="input-area">
+      <input id="user-input" placeholder="Örnek: integrate(x^2*sin(x)) veya türevini açıkla" />
+      <button id="solve-btn">Çöz</button>
+    </div>
+  </div>
+</div>
+
+<script src="math-engine.js"></script>
+<script src="ui-controller.js"></script>
+<script src="animations.js"></script>
+</body>
+</html>
